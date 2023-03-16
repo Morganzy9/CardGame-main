@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aPC-cV-o87">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card SelectionVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CardSelectionVC" customModule="fitnessChalange" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10C" translatesAutoresizingMaskIntoConstraints="NO" id="izr-OJ-VRt">
+                                <rect key="frame" x="71.666666666666686" y="156" width="250" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Bzc-PU-X7v"/>
+                                    <constraint firstAttribute="height" constant="350" id="i1k-Q8-bfw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyy-eI-E2N">
+                                <rect key="frame" x="66.666666666666686" y="556" width="260" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="K8Z-uW-Ku5"/>
+                                    <constraint firstAttribute="width" constant="260" id="rh1-jf-rp3"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="stop.circle.fill" catalog="system" title="Stop!" imagePadding="5" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="systemGray6Color"/>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J0Q-Pw-9dM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="px0-hG-Zt1">
+                                <rect key="frame" x="66.666666666666671" y="626" width="115.00000000000001" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4CF-ih-0aA"/>
+                                    <constraint firstAttribute="width" constant="115" id="YjN-Gj-kjJ"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrow.clockwise" catalog="system" title="Restart" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                    <color key="baseForegroundColor" systemColor="systemGray6Color"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="restartButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kbQ-3w-YiX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrT-oV-sUK">
+                                <rect key="frame" x="211.66666666666663" y="626" width="115" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OjG-N4-KAn"/>
+                                    <constraint firstAttribute="width" constant="115" id="Ujb-8K-hG2"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="mail" catalog="system" title="Rules" imagePadding="3" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                    <color key="baseForegroundColor" systemColor="systemGray6Color"/>
+                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="I9E-58-kHs" kind="presentation" id="8u2-Ft-d5g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srN-vD-oVS">
+                                <rect key="frame" x="66.666666666666686" y="693" width="260" height="50"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="folder.fill" catalog="system" title="Random a Joke!" imagePadding="5" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="systemGray6Color"/>
+                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="A6V-RM-iBG" kind="show" id="PIA-Vl-El3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="px0-hG-Zt1" firstAttribute="top" secondItem="Wyy-eI-E2N" secondAttribute="bottom" constant="20" id="3pd-o6-kGu"/>
+                            <constraint firstItem="px0-hG-Zt1" firstAttribute="leading" secondItem="Wyy-eI-E2N" secondAttribute="leading" id="3rm-gM-1R6"/>
+                            <constraint firstItem="mrT-oV-sUK" firstAttribute="top" secondItem="Wyy-eI-E2N" secondAttribute="bottom" constant="20" id="7QK-Oc-ePG"/>
+                            <constraint firstItem="srN-vD-oVS" firstAttribute="height" secondItem="Wyy-eI-E2N" secondAttribute="height" id="A43-LI-IZr"/>
+                            <constraint firstItem="srN-vD-oVS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ch2-XV-39z"/>
+                            <constraint firstItem="Wyy-eI-E2N" firstAttribute="top" secondItem="izr-OJ-VRt" secondAttribute="bottom" constant="50" id="DBT-BN-z5s"/>
+                            <constraint firstItem="izr-OJ-VRt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qgx-eM-TMe"/>
+                            <constraint firstItem="izr-OJ-VRt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-95" id="Rbu-HD-sap"/>
+                            <constraint firstItem="mrT-oV-sUK" firstAttribute="trailing" secondItem="Wyy-eI-E2N" secondAttribute="trailing" id="YML-4C-8cI"/>
+                            <constraint firstItem="izr-OJ-VRt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gKo-z1-C2G"/>
+                            <constraint firstItem="srN-vD-oVS" firstAttribute="width" secondItem="Wyy-eI-E2N" secondAttribute="width" id="mie-fU-qws"/>
+                            <constraint firstItem="srN-vD-oVS" firstAttribute="top" secondItem="mrT-oV-sUK" secondAttribute="bottom" constant="17" id="ulV-27-27k"/>
+                            <constraint firstItem="Wyy-eI-E2N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xGw-6i-917"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vNq-Sh-mIk"/>
+                    <connections>
+                        <outlet property="cardImageView" destination="izr-OJ-VRt" id="uzv-hn-NO5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.885496183206" y="-2.1126760563380285"/>
+        </scene>
+        <!--Joke View Controller-->
+        <scene sceneID="Oz5-DT-tIA">
+            <objects>
+                <viewController storyboardIdentifier="JokeViewController" id="A6V-RM-iBG" customClass="JokeViewController" customModule="fitnessChalange" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OPX-6p-0gr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Joke..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tyk-PJ-JaM">
+                                <rect key="frame" x="16" y="143" width="361" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="3MG-eU-Z02"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fL-cO-FPd">
+                                <rect key="frame" x="71.666666666666686" y="500" width="250" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="oJj-Uy-UUL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="s54-oX-VZq"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="terminal.fill" catalog="system" title="Random a Joke!" imagePadding="5" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                    <color key="baseForegroundColor" systemColor="systemGray6Color"/>
+                                    <color key="baseBackgroundColor" red="0.96841138601303101" green="0.46014827799031932" blue="0.19250258489111641" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="randomJokeButton:" destination="A6V-RM-iBG" eventType="touchUpInside" id="nG0-Ru-AKC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Uqv-ux-uYE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9fL-cO-FPd" firstAttribute="top" secondItem="Tyk-PJ-JaM" secondAttribute="bottom" constant="137" id="1CH-ZU-1xe"/>
+                            <constraint firstItem="Tyk-PJ-JaM" firstAttribute="top" secondItem="Uqv-ux-uYE" secondAttribute="top" constant="40" id="7Cc-3J-l4G"/>
+                            <constraint firstItem="Tyk-PJ-JaM" firstAttribute="centerX" secondItem="Uqv-ux-uYE" secondAttribute="centerX" id="IOX-YJ-juo"/>
+                            <constraint firstItem="Uqv-ux-uYE" firstAttribute="trailing" secondItem="Tyk-PJ-JaM" secondAttribute="trailing" constant="16" id="JSs-xD-MJL"/>
+                            <constraint firstItem="9fL-cO-FPd" firstAttribute="centerX" secondItem="Uqv-ux-uYE" secondAttribute="centerX" id="Ugo-Vw-vdP"/>
+                            <constraint firstItem="Tyk-PJ-JaM" firstAttribute="leading" secondItem="Uqv-ux-uYE" secondAttribute="leading" constant="16" id="oUF-KB-Mlt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lis-k1-Ge8"/>
+                    <connections>
+                        <outlet property="jokeLabel" destination="Tyk-PJ-JaM" id="G8V-1Z-F6A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B1g-7L-MrY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.885496183206" y="688.73239436619724"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hCK-G3-TmG">
+            <objects>
+                <viewController id="I9E-58-kHs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CdH-1w-3zp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NH0-pP-nWx">
+                                <rect key="frame" x="30" y="139" width="333" height="64"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The value of each card represents the number of exercise you do.  J = 11, Q = 12, K = 13, A = 14 " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASa-fo-CZr">
+                                <rect key="frame" x="30" y="223.00000000000003" width="333" height="115.33333333333334"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♠️ = Push-up  ♥️ = Sit-up  ♣️ = Burpees  ♦️ = Jumping Jacks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDb-DR-cjg">
+                                <rect key="frame" x="96.666666666666686" y="413.33333333333331" width="200" height="235.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="lF5-Ad-xle"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DV4-Be-JnH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ASa-fo-CZr" firstAttribute="leading" secondItem="DV4-Be-JnH" secondAttribute="leading" constant="30" id="HYG-qM-Roa"/>
+                            <constraint firstItem="jDb-DR-cjg" firstAttribute="centerX" secondItem="CdH-1w-3zp" secondAttribute="centerX" id="WN0-rZ-Ee8"/>
+                            <constraint firstItem="jDb-DR-cjg" firstAttribute="top" secondItem="ASa-fo-CZr" secondAttribute="bottom" constant="75" id="dJo-MD-QfM"/>
+                            <constraint firstItem="ASa-fo-CZr" firstAttribute="top" secondItem="NH0-pP-nWx" secondAttribute="bottom" constant="20" id="gMe-zp-ygi"/>
+                            <constraint firstItem="DV4-Be-JnH" firstAttribute="trailing" secondItem="NH0-pP-nWx" secondAttribute="trailing" constant="30" id="pXV-27-hd5"/>
+                            <constraint firstItem="DV4-Be-JnH" firstAttribute="trailing" secondItem="ASa-fo-CZr" secondAttribute="trailing" constant="30" id="r4t-rM-u2P"/>
+                            <constraint firstItem="NH0-pP-nWx" firstAttribute="top" secondItem="DV4-Be-JnH" secondAttribute="top" constant="80" id="rgA-sh-etg"/>
+                            <constraint firstItem="NH0-pP-nWx" firstAttribute="leading" secondItem="DV4-Be-JnH" secondAttribute="leading" constant="30" id="zdN-1X-on4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ftp-9m-BWJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875.5725190839694" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="246-me-BN7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aPC-cV-o87" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G7E-c1-TBv">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xOt-zw-Pp7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RRK-xb-TPZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="10C" width="691" height="1056"/>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
+        <image name="folder.fill" catalog="system" width="128" height="96"/>
+        <image name="mail" catalog="system" width="128" height="93"/>
+        <image name="stop.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="terminal.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
