@@ -11,7 +11,7 @@
         <!--Card SelectionVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CardSelectionVC" customModule="fitnessChalange" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CardSelectionVC" customModule="CARDGAME" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,7 +118,7 @@
         <!--Joke View Controller-->
         <scene sceneID="Oz5-DT-tIA">
             <objects>
-                <viewController storyboardIdentifier="JokeViewController" id="A6V-RM-iBG" customClass="JokeViewController" customModule="fitnessChalange" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JokeViewController" id="A6V-RM-iBG" customClass="JokeViewController" customModule="CARDGAME" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OPX-6p-0gr">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

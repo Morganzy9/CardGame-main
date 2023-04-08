@@ -29,7 +29,7 @@ class JokeViewController: UIViewController {
                    let joke = try JSONDecoder().decode(Joke.self, from: data)
 
                    DispatchQueue.main.async {
-                       self.jokeLabel.text = joke.setup + "\n\n" + joke.punchline
+                       self.jokeLabel.text = joke.setup + "\n\n\n" + joke.punchline
                    }
                } catch let error {
                    print(error.localizedDescription)
